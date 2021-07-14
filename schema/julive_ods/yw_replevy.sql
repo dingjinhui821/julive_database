@@ -1,0 +1,47 @@
+drop table if exists ods.yw_replevy;
+create external table ods.yw_replevy(
+id                                                     int             comment '',
+type                                                   int             comment '追回类型，1带看2无意向3投诉',
+order_id                                               bigint          comment '订单id',
+status                                                 int             comment '追回状态，1咨询部跟进，2客服跟进，3已二次评价，4已完成，10放弃追回',
+business_id                                            bigint          comment '业务id，更加类型来判断，带看对应的带看评论id，无意向对应的无意向评论id，投诉id',
+business_grade                                         int             comment '业务满意度评分',
+business_global_comment                                string          comment '业务评价记录',
+business_happen_datetime                               int             comment '业务发生时间',
+business_employee_id                                   int             comment '业务咨询师id',
+business_employee_name                                 string          comment '业务咨询师姓名',
+business_employee_manager_id                           int             comment '业务咨询师组长id',
+business_employee_manager_name                         string          comment '业务咨询师组长姓名',
+employee_manager_id                                    int             comment '追回咨询师组长id',
+employee_manager_name                                  string          comment '追回咨询师组长姓名',
+employee_desc                                          string          comment '咨询师情况说明',
+employee_solution                                      string          comment '咨询师解决方案',
+task_employee_id                                       int             comment '追回客服id',
+task_employee_name                                     string          comment '追回客服姓名',
+task_grade                                             int             comment '追回满意度，1不满意，2一般，3满意 10撤销投诉，11继续投诉',
+task_grade_datetime                                    int             comment '追回评价时间',
+task_remark                                            string          comment '追回备注',
+final_employee_id                                      int             comment '追回服管id',
+final_employee_name                                    string          comment '追回服管姓名',
+final_grade                                            double          comment '绩效满意度',
+final_opinion                                          string          comment '服管意见',
+create_datetime                                        int             comment '创建时间',
+update_datetime                                        int             comment '更新时间',
+user_id                                                int             comment '用户id',
+user_name                                              string          comment '用户姓名',
+user_sex                                               int             comment '用户性别',
+user_mobile                                            string          comment '用户手机号',
+user_more_mobile                                       string          comment '用户备用联系方式',
+order_employee_id                                      int             comment '订单所属咨询师id',
+order_employee_name                                    string          comment '订单所属咨询师',
+order_employee_manager_id                              int             comment '订单所属咨询师组长id',
+order_employee_manager_name                            string          comment '订单所属咨询师组长',
+city_id                                                int             comment '城市id，城市化专用的分隔标记',
+cause_type                                             string          comment '追回原因',
+updater                                                int             comment '操作者',
+etl_time                                               string          comment 'ETL跑数时间'
+) row format delimited fields terminated by '\001' 
+lines terminated by '\n' 
+stored as textfile  
+location '/dw/ods/yw_replevy'
+;

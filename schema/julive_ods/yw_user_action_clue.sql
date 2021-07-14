@@ -1,0 +1,46 @@
+drop table if exists ods.yw_user_action_clue;
+create external table ods.yw_user_action_clue(
+id                                                     int             comment '',
+create_datetime                                        int             comment '',
+update_datetime                                        int             comment '',
+creator                                                int             comment '',
+updator                                                int             comment '',
+order_id                                               int             comment '订单id',
+device_type                                            int             comment '设备类型(1pc,2m,3app-andriod,4app-ios)，具体见common/constants/yworderconstant.php',
+source                                                 int             comment '(三端)来源',
+op_type                                                int             comment '(三端)op type',
+clue_quality                                           int             comment '(三端)线索质量 1:优质，2:非优质',
+district_ids                                           string          comment '(网站)区域信息',
+manual_district_name                                   string          comment '(网站)用户直接输入的区域名称',
+summary                                                string          comment '(网站)用户填写的居室',
+project_ids                                            string          comment '(三端)楼盘id信息',
+min_price                                              int             comment '(网站)用户填写的最低总价',
+max_price                                              int             comment '(网站)用户填写的最高总价',
+min_acreage                                            int             comment '(网站)用户填写的最小面积',
+max_acreage                                            int             comment '(网站)用户填写的最大面积',
+view_project_info                                      string          comment '(三端)浏览次数最多的楼盘信息（楼盘id，名字，次数）',
+search_min_price                                       int             comment '(三端)筛选条件最多或最近的最低总价',
+search_max_price                                       int             comment '(三端)筛选条件最多或最近的最高总价',
+search_district_ids                                    string          comment '(三端)筛选条件最多或最近的区域信息',
+app_help_down_pay_min                                  int             comment '(app-帮我找房)最低首付',
+app_help_down_pay_max                                  int             comment '(app-帮我找房)最高首付',
+app_help_project_type                                  string          comment '(app-帮我找房)类型,多选用,分割',
+app_help_pay_purpose                                   string          comment '(app-帮我找房)买房目的',
+app_help_special                                       string          comment '(app-帮我找房)特殊需求',
+favorite_project_ids                                   string          comment '(三端)收藏的楼盘',
+user_question                                          string          comment '用户提问问题',
+user_name                                              string          comment '用户昵称',
+order_datetime                                         int             comment '预约时间',
+marketing_input_info_json                              string          comment '营销推广页上客户填写的表单信息',
+data_source_flag                                       int             comment '创建的类型标识:1不是来源于营销推广页数据2:来源于营销推广页',
+sex                                                    int             comment '0: 未设置1:先生2:女士',
+`desc`                                                 string          comment '描述 比如记录楼盘搜索的关键词',
+sobot_service_id                                       string          comment '智齿客服id',
+leave_phone_city_id                                    bigint          comment '留电城市',
+project_id_city_id                                     bigint          comment '留电楼盘城市',
+etl_time                                               string          comment 'ETL跑数时间'
+) row format delimited fields terminated by '\001' 
+lines terminated by '\n' 
+stored as textfile  
+location '/dw/ods/yw_user_action_clue'
+;

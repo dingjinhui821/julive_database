@@ -1,0 +1,541 @@
+nohup: ignoring input
+30
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200729.log
+INFO:root:***************************************** ETL Date : 20200729 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200729.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200729.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200729 -hiveconf etlYestoday=20200728 -hiveconf etlTomorrow=20200730 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200729.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200729}', 'rowNums': '79189', 'timeCost': '112.665'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200729}', 'rowNums': '80198', 'timeCost': '112.665'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+29
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200730.log
+INFO:root:***************************************** ETL Date : 20200730 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200730.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200730.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200730 -hiveconf etlYestoday=20200729 -hiveconf etlTomorrow=20200731 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200730.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200730}', 'rowNums': '77318', 'timeCost': '93.794'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200730}', 'rowNums': '78167', 'timeCost': '93.794'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+28
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200731.log
+INFO:root:***************************************** ETL Date : 20200731 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200731.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200731.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200731 -hiveconf etlYestoday=20200730 -hiveconf etlTomorrow=20200801 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200731.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200731}', 'rowNums': '75333', 'timeCost': '105.177'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200731}', 'rowNums': '76309', 'timeCost': '105.177'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+27
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200801.log
+INFO:root:***************************************** ETL Date : 20200801 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200801.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200801.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200801 -hiveconf etlYestoday=20200731 -hiveconf etlTomorrow=20200802 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200801.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200801}', 'rowNums': '82385', 'timeCost': '106.057'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200801}', 'rowNums': '83888', 'timeCost': '106.057'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+26
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200802.log
+INFO:root:***************************************** ETL Date : 20200802 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200802.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200802.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200802 -hiveconf etlYestoday=20200801 -hiveconf etlTomorrow=20200803 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200802.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200802}', 'rowNums': '89948', 'timeCost': '126.698'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200802}', 'rowNums': '92035', 'timeCost': '126.698'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+25
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200803.log
+INFO:root:***************************************** ETL Date : 20200803 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200803.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200803.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200803 -hiveconf etlYestoday=20200802 -hiveconf etlTomorrow=20200804 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200803.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200803}', 'rowNums': '80488', 'timeCost': '122.032'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200803}', 'rowNums': '81922', 'timeCost': '122.032'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+24
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200804.log
+INFO:root:***************************************** ETL Date : 20200804 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200804.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200804.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200804 -hiveconf etlYestoday=20200803 -hiveconf etlTomorrow=20200805 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200804.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200804}', 'rowNums': '78555', 'timeCost': '184.378'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200804}', 'rowNums': '80212', 'timeCost': '184.378'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+23
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200805.log
+INFO:root:***************************************** ETL Date : 20200805 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200805.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200805.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200805 -hiveconf etlYestoday=20200804 -hiveconf etlTomorrow=20200806 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200805.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200805}', 'rowNums': '81912', 'timeCost': '147.146'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200805}', 'rowNums': '83529', 'timeCost': '147.146'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+22
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200806.log
+INFO:root:***************************************** ETL Date : 20200806 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200806.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200806.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200806 -hiveconf etlYestoday=20200805 -hiveconf etlTomorrow=20200807 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200806.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200806}', 'rowNums': '91124', 'timeCost': '123.84'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200806}', 'rowNums': '92642', 'timeCost': '123.84'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+21
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200807.log
+INFO:root:***************************************** ETL Date : 20200807 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200807.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200807.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200807 -hiveconf etlYestoday=20200806 -hiveconf etlTomorrow=20200808 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200807.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200807}', 'rowNums': '104638', 'timeCost': '123.48'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200807}', 'rowNums': '106072', 'timeCost': '123.48'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+20
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200808.log
+INFO:root:***************************************** ETL Date : 20200808 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200808.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200808.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200808 -hiveconf etlYestoday=20200807 -hiveconf etlTomorrow=20200809 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200808.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200808}', 'rowNums': '118726', 'timeCost': '126.75'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200808}', 'rowNums': '120178', 'timeCost': '126.75'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+19
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200809.log
+INFO:root:***************************************** ETL Date : 20200809 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200809.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200809.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200809 -hiveconf etlYestoday=20200808 -hiveconf etlTomorrow=20200810 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200809.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200809}', 'rowNums': '125240', 'timeCost': '123.417'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200809}', 'rowNums': '127242', 'timeCost': '123.417'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+18
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200810.log
+INFO:root:***************************************** ETL Date : 20200810 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200810.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200810.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200810 -hiveconf etlYestoday=20200809 -hiveconf etlTomorrow=20200811 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200810.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200810}', 'rowNums': '116984', 'timeCost': '170.816'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200810}', 'rowNums': '118559', 'timeCost': '170.816'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+17
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200811.log
+INFO:root:***************************************** ETL Date : 20200811 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200811.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200811.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200811 -hiveconf etlYestoday=20200810 -hiveconf etlTomorrow=20200812 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200811.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200811}', 'rowNums': '113467', 'timeCost': '125.48'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200811}', 'rowNums': '115197', 'timeCost': '125.48'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+16
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200812.log
+INFO:root:***************************************** ETL Date : 20200812 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200812.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200812.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200812 -hiveconf etlYestoday=20200811 -hiveconf etlTomorrow=20200813 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200812.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200812}', 'rowNums': '111594', 'timeCost': '149.323'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200812}', 'rowNums': '113142', 'timeCost': '149.323'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+15
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200813.log
+INFO:root:***************************************** ETL Date : 20200813 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200813.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200813.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200813 -hiveconf etlYestoday=20200812 -hiveconf etlTomorrow=20200814 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200813.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200813}', 'rowNums': '115123', 'timeCost': '167.451'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200813}', 'rowNums': '116749', 'timeCost': '167.451'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+14
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200814.log
+INFO:root:***************************************** ETL Date : 20200814 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200814.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200814.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200814 -hiveconf etlYestoday=20200813 -hiveconf etlTomorrow=20200815 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200814.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200814}', 'rowNums': '116055', 'timeCost': '137.926'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200814}', 'rowNums': '118038', 'timeCost': '137.926'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+13
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200815.log
+INFO:root:***************************************** ETL Date : 20200815 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200815.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200815.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200815 -hiveconf etlYestoday=20200814 -hiveconf etlTomorrow=20200816 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200815.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200815}', 'rowNums': '122014', 'timeCost': '135.407'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200815}', 'rowNums': '124411', 'timeCost': '135.407'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+12
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200816.log
+INFO:root:***************************************** ETL Date : 20200816 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200816.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200816.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200816 -hiveconf etlYestoday=20200815 -hiveconf etlTomorrow=20200817 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200816.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200816}', 'rowNums': '133324', 'timeCost': '116.994'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200816}', 'rowNums': '135906', 'timeCost': '116.994'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+11
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200817.log
+INFO:root:***************************************** ETL Date : 20200817 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200817.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200817.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200817 -hiveconf etlYestoday=20200816 -hiveconf etlTomorrow=20200818 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200817.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200817}', 'rowNums': '120166', 'timeCost': '105.811'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200817}', 'rowNums': '122773', 'timeCost': '105.811'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+10
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200818.log
+INFO:root:***************************************** ETL Date : 20200818 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200818.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200818.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200818 -hiveconf etlYestoday=20200817 -hiveconf etlTomorrow=20200819 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200818.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200818}', 'rowNums': '117425', 'timeCost': '110.251'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200818}', 'rowNums': '119853', 'timeCost': '110.251'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+9
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200819.log
+INFO:root:***************************************** ETL Date : 20200819 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200819.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200819.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200819 -hiveconf etlYestoday=20200818 -hiveconf etlTomorrow=20200820 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200819.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200819}', 'rowNums': '118704', 'timeCost': '116.018'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200819}', 'rowNums': '121640', 'timeCost': '116.018'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+8
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200820.log
+INFO:root:***************************************** ETL Date : 20200820 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200820.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200820.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200820 -hiveconf etlYestoday=20200819 -hiveconf etlTomorrow=20200821 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200820.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200820}', 'rowNums': '119503', 'timeCost': '131.324'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200820}', 'rowNums': '122134', 'timeCost': '131.324'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+7
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200821.log
+INFO:root:***************************************** ETL Date : 20200821 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200821.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200821.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200821 -hiveconf etlYestoday=20200820 -hiveconf etlTomorrow=20200822 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200821.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200821}', 'rowNums': '111994', 'timeCost': '104.218'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200821}', 'rowNums': '114408', 'timeCost': '104.218'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+6
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200822.log
+INFO:root:***************************************** ETL Date : 20200822 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200822.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200822.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200822 -hiveconf etlYestoday=20200821 -hiveconf etlTomorrow=20200823 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200822.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200822}', 'rowNums': '123478', 'timeCost': '107.629'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200822}', 'rowNums': '126285', 'timeCost': '107.629'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+5
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200823.log
+INFO:root:***************************************** ETL Date : 20200823 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200823.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200823.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200823 -hiveconf etlYestoday=20200822 -hiveconf etlTomorrow=20200824 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200823.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200823}', 'rowNums': '135230', 'timeCost': '115.993'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200823}', 'rowNums': '137930', 'timeCost': '115.993'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+4
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200824.log
+INFO:root:***************************************** ETL Date : 20200824 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200824.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200824.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200824 -hiveconf etlYestoday=20200823 -hiveconf etlTomorrow=20200825 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200824.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200824}', 'rowNums': '109817', 'timeCost': '110.704'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200824}', 'rowNums': '111147', 'timeCost': '110.704'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+3
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200825.log
+INFO:root:***************************************** ETL Date : 20200825 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200825.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200825.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200825 -hiveconf etlYestoday=20200824 -hiveconf etlTomorrow=20200826 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200825.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200825}', 'rowNums': '102384', 'timeCost': '100.834'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200825}', 'rowNums': '103887', 'timeCost': '100.834'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+2
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200826.log
+INFO:root:***************************************** ETL Date : 20200826 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200826.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200826.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200826 -hiveconf etlYestoday=20200825 -hiveconf etlTomorrow=20200827 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200826.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200826}', 'rowNums': '112189', 'timeCost': '118.569'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200826}', 'rowNums': '114000', 'timeCost': '118.569'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************
+1
+Output logFilePath:/data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200827.log
+INFO:root:***************************************** ETL Date : 20200827 *****************************************
+INFO:root:***************************************** 日期解析成功 *****************************************
+INFO:root:***************************************** Hera任务解析成功 *****************************************
+INFO:root:Task SQL File : /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql
+INFO:root:Task Log File : /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200827.log
+INFO:root:查看详细运行日志请复制Shell指令 :   tail -f /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200827.log
+INFO:root:***************************************** 文件解析成功 *****************************************
+INFO:root:Hive script : hive -hiveconf etlDate=20200827 -hiveconf etlYestoday=20200826 -hiveconf etlTomorrow=20200828 -f /data4/nfsdata/julive_dw/etl/sql/julive_app/app_xpt_data_base.sql 2> /data4/nfsdata/julive_dw/etl/logs/julive_app/app_xpt_data_base_20200827.log
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+INFO:root:***************************************** Hive任务执行成功 *****************************************
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200827}', 'rowNums': '126016', 'timeCost': '108.849'}
+INFO:root:### 执行结果 :   {'dbName': 'julive_app', 'tableName': 'app_xpt_data_base', 'partName': '{pdate=20200827}', 'rowNums': '128281', 'timeCost': '108.849'}
+INFO:root:***************************************** 执行日志解析成功 *****************************************
+INFO:root:***************************************** 元数据持久化成功 *****************************************
+INFO:root:***************************************** 本次任务执行成功 *****************************************

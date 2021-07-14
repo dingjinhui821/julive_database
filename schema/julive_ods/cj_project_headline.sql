@@ -1,0 +1,48 @@
+drop table if exists ods.cj_project_headline;
+create external table ods.cj_project_headline(
+id                                                     int             comment '',
+creator                                                bigint          comment '创建者',
+updator                                                bigint          comment '更新者',
+create_datetime                                        int             comment '创建时间',
+update_datetime                                        int             comment '更新时间',
+title                                                  string          comment '标题',
+content                                                string          comment '内容',
+status                                                 int             comment '10:隐藏，20:待发布，30:已发布',
+type                                                   int             comment '内容类型',
+export_time                                            int             comment '导入时间',
+publish_time                                           int             comment '发布时间',
+view_num                                               int             comment '实际浏览量',
+score                                                  double          comment '分数',
+city_id                                                string          comment '城市id，逗号分隔',
+publish_type                                           int             comment '发布类型（1:直接发布，2:定时发布）',
+content_field                                          string          comment '详情字段',
+project_id                                             int             comment '楼盘id',
+content_field_desc                                     string          comment '详情描述',
+base_view_num                                          int             comment '基础浏览量',
+from_template                                          int             comment '来源样式（1:手动添加，2:导入动态，3:导入问答）',
+child_type                                             int             comment '内容分类对应的子分类',
+object_id                                              int             comment '对象id',
+card_type                                              int             comment '10:无图片，20，一张图片，30:三张图片',
+object_ids                                             string          comment '冗余字段 目前用于存导入带看报告的问答id 逗号分隔多个',
+leave_phone_button                                     string          comment '留电按钮文案配置，json格式',
+multi_type                                             string          comment '文章多分类标签，逗号分隔',
+source                                                 int             comment '媒体类型，微信公众号:10',
+media_primary_id                                       int             comment '媒体主键id',
+media_name                                             string          comment '媒体名称文本',
+author                                                 string          comment '文章作者',
+author_id                                              bigint          comment '文章作者id，虚拟账户表id',
+product_type                                           string          comment '所属产品，逗号分隔',
+recommend                                              int             comment '是否推荐，2不推荐、1推荐',
+cover_img                                              string          comment '封面图片',
+introduction                                           string          comment '文章简介',
+is_top                                                 int             comment '是否置顶 1 是 2 否',
+top_desc                                               string          comment '置顶文案',
+is_original                                            int             comment '是否原创 1 原创 2 已授权 3 未授权',
+like_num                                               int             comment '点赞数',
+article_id                                             int             comment '抓取文章库的主键id',
+etl_time                                               string          comment 'ETL跑数时间'
+) row format delimited fields terminated by '\001' 
+lines terminated by '\n' 
+stored as textfile  
+location '/dw/ods/cj_project_headline'
+;

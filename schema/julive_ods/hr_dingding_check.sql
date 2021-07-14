@@ -1,0 +1,48 @@
+drop table if exists ods.hr_dingding_check;
+create external table ods.hr_dingding_check(
+id                                                     int             comment '',
+ding_log_id                                            string          comment '唯一标示id',
+group_id                                               int             comment '考勤组id',
+plan_id                                                string          comment '排班id',
+work_date                                              int             comment '工作日',
+user_id                                                string          comment 'userid',
+check_type                                             string          comment '考勤类型（onduty:上班，offduty:下班）',
+source_type                                            string          comment '数据来源（atm:考勤机 beacon:ibeacon ding_atm:钉钉考勤机 app_user:用户打卡 app_boss:老板改签 app_approve:审批系统 system:考勤系统 app_auto_check:自动打卡）',
+time_result                                            string          comment '时间结果（normal:正常 early:早退  late:迟到 seriouslate:严重迟到notsigned:未打卡）',
+location_result                                        string          comment '位置结果（normal:范围内outside:范围外）',
+approve_id                                             string          comment '关联的审批id',
+procinst_id                                            string          comment '关联的审批id',
+base_check_time                                        int             comment '计算迟到和早退，基准时间',
+user_check_time                                        int             comment '实际打卡时间',
+class_id                                               int             comment '考勤班次id，没有的话表示该次打卡不在排班内',
+is_legal                                               string          comment '是否合法',
+location_method                                        string          comment '定位方法',
+device_id                                              string          comment '设备id',
+user_address                                           string          comment '用户打卡地址',
+user_longitude                                         string          comment '用户打卡经度',
+user_latitude                                          string          comment '用户打卡纬度',
+user_accuracy                                          string          comment '用户打卡定位精度',
+user_ssid                                              string          comment '用户打卡wifi ssid',
+user_mac_addr                                          string          comment '用户打卡wifi mac地址',
+plan_check_time                                        int             comment '排班打卡时间',
+base_address                                           string          comment '基准地址',
+base_longitude                                         string          comment '基准经度',
+base_latitude                                          string          comment '基准纬度',
+base_accuracy                                          string          comment '基准定位精度',
+base_ssid                                              string          comment '基准wifi ssid',
+base_mac_addr                                          string          comment '基准 mac 地址',
+corp_id                                                string          comment '',
+gmt_create                                             int             comment '创建时间',
+gmt_modified                                           int             comment '修改时间',
+time_from                                              int             comment '查询开始时间',
+time_to                                                int             comment '查询结束',
+create_datetime                                        int             comment '创建时间',
+update_datetime                                        int             comment '',
+employee_id                                            bigint          comment '员工id',
+remark                                                 string          comment '备注',
+etl_time                                               string          comment 'ETL跑数时间'
+) row format delimited fields terminated by '\001' 
+lines terminated by '\n' 
+stored as textfile  
+location '/dw/ods/hr_dingding_check'
+;

@@ -1,0 +1,48 @@
+drop table if exists ods.yw_business_order;
+create external table ods.yw_business_order(
+id                                                     int             comment 'bd单id',
+name                                                   string          comment '项目名称',
+city_id                                                int             comment '城市id',
+employee_id                                            int             comment '合作跟进bd的id',
+charge_employee_id                                     int             comment '侃家项目负责人',
+marketor_name                                          string          comment '营销负责人',
+decisionor_name                                        string          comment '决策人姓名',
+decisionor_tel                                         string          comment '决策人手机号码',
+relations                                              string          comment '人物关系',
+organization                                           string          comment '组织架构',
+market_cost                                            string          comment '营销费用',
+get_user_way                                           string          comment '获客途径',
+task_target                                            string          comment '任务目标',
+task_completion                                        string          comment '任务完成情况',
+month_change                                           string          comment '月均去化',
+market_node                                            string          comment '营销节点',
+channel_company                                        string          comment '渠道公司',
+agency_company                                         string          comment '代理公司',
+project_type                                           string          comment '楼盘业态',
+house_type_acreage                                     string          comment '户型面积',
+on_sale_house                                          string          comment '在售房源',
+for_sale_house                                         string          comment '待售房源',
+price                                                  string          comment '单价',
+total_price                                            string          comment '总价',
+selling_point                                          string          comment '核心卖点',
+market_words                                           string          comment '市场话术',
+competor_words                                         string          comment '话术-竞品',
+developer_words                                        string          comment '话术-开发商',
+task_words                                             string          comment '话术-任务',
+create_datetime                                        int             comment '创建时间',
+creator                                                int             comment '创建人',
+update_datetime                                        int             comment '更新时间',
+updator                                                int             comment '更新人',
+progress                                               int             comment '进度，1未与决策人见面，2已与决策人见面，3已商讨条款，4已签约',
+status                                                 int             comment '状态，1陌拜，2约访，3谈判阶段，4条款阶款，5签约合作',
+income_datetime                                        int             comment '收回场函/框架日期',
+income_contract_datetime                               int             comment '收回收回合同/补充日期',
+cooperate_type                                         int             comment '签约类型:1直签，2非直签',
+partner_id                                             int             comment '合作方',
+partner                                                string          comment '合作方',
+etl_time                                               string          comment 'ETL跑数时间'
+) row format delimited fields terminated by '\001' 
+lines terminated by '\n' 
+stored as textfile  
+location '/dw/ods/yw_business_order'
+;

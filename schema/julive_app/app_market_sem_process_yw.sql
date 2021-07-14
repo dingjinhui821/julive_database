@@ -1,0 +1,36 @@
+drop TABLE if  exists julive_app.app_market_sem_process_yw;
+CREATE TABLE if not exists julive_app.app_market_sem_process_yw(
+  `report_date` string COMMENT '报告日期', 
+  `city_name` string COMMENT '业务城市名称', 
+  `media_type` string COMMENT '媒体名称', 
+  `product_type` string COMMENT '模块名称', 
+  `device_type` string COMMENT '设备名称', 
+  `channel_id` string COMMENT '渠道id', 
+  `from_source` string COMMENT '业务线 1-自营 2-乌鲁木齐 3-二手房中介 4-加盟商数据', 
+  `mgr_city` string COMMENT '主城名称', 
+  `show_num` bigint COMMENT '展示', 
+  `click_num` bigint COMMENT '点击', 
+  `bill_cost` decimal(38,4) COMMENT '账面消耗', 
+  `cost` decimal(38,4) COMMENT '消耗量', 
+  `xs_cnt` bigint COMMENT '线索量', 
+  `sh_cnt` bigint COMMENT '上户量', 
+  `dk_cnt` bigint COMMENT '带看量', 
+  `rg_cnt` bigint COMMENT '认购量', 
+  `qy_cnt` bigint COMMENT '签约量-含退、含外联', 
+  `rengou_yingshou` decimal(38,4) COMMENT '签约-含退、含外联收入', 
+  `rengou_yingshou_net` decimal(38,4) COMMENT '认购-含外联收入', 
+  `qianyue_yingshou` decimal(38,4) COMMENT '签约-含退、含外联收入', 
+  `xs_score` string COMMENT '线索质量分', 
+  `first_call_duration` bigint COMMENT '首次通话时长', 
+  `first_call_duration_num` bigint COMMENT '首次通话时数量', 
+  `online_dk_cnt` bigint COMMENT '线上带看量', 
+  `400_xs_cnt` bigint COMMENT '400线索量', 
+  `400_sh_cnt` bigint COMMENT '400上户量', 
+  `intent_low_num` bigint COMMENT '转为无意向数量(无意向时间-分配时间>0)', 
+  `call_duration_sh_num` bigint COMMENT '通话上户数量', 
+  `developer_xs_cnt` bigint COMMENT '开发商线索量', 
+  `xs_all_cnt` bigint COMMENT '线索总量(包含yw_order_kfs)', 
+  `etl_time` timestamp COMMENT 'ETL跑数时间')
+COMMENT '市场SEM投放数据(数仓业务城市版)'
+stored as parquet;
+  

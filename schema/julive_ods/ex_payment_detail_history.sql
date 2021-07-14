@@ -1,0 +1,45 @@
+drop table if exists ods.ex_payment_detail_history;
+create external table ods.ex_payment_detail_history(
+id                                                     bigint          comment '',
+detail_id                                              bigint          comment '回款详情id',
+forecast_id                                            bigint          comment '预测回款id',
+contract_id                                            bigint          comment '合同id',
+category_id                                            bigint          comment '合同分类id',
+deal_id                                                bigint          comment '成交单id',
+receive_datetime                                       int             comment '应收日期',
+receive_money                                          string          comment '应收金额',
+receive_content                                        string          comment '应收展示文本',
+actual_datetime                                        int             comment '实收日期',
+actual_money                                           string          comment '实收金额',
+actual_content                                         string          comment '实收展示文本',
+review                                                 int             comment '审核状态，0未审核，1审核成功，2审核失败',
+submit_review_datetime                                 int             comment '提交审核时间',
+review_reason                                          string          comment '审核失败原因',
+receive_status                                         int             comment '人工预测返费状态',
+create_datetime                                        int             comment '创建时间',
+update_datetime                                        int             comment '更新人',
+creator                                                int             comment '创建人',
+updator                                                int             comment '更新人',
+status                                                 int             comment '状态，1正常 2删除',
+commission_type                                        int             comment '佣金类型 1前置电商 2 后置返费 3 成交奖',
+step                                                   int             comment '电商结佣阶段/返费申请阶段',
+is_old                                                 int             comment '是否是老数据0:否 1:是',
+audit_datetime                                         int             comment '审核时间',
+payback_employee_id                                    bigint          comment '回款负责人',
+revoke_reason                                          string          comment '撤销原因',
+cw_accounts_id                                         int             comment '银行账户:cw_accounts 表 id',
+cw_accounting_class_id                                 int             comment 'cw_accounting_class 表 id',
+auditor                                                int             comment '审核人',
+source                                                 int             comment '来源（1:核销2:回款跟进） 默认 2',
+bank_flow_id                                           int             comment 'bank_flow_id 银行流水主表id',
+verify_status                                          int             comment '(核销操作变更 每次此字段变更需要根据对应关系修改 review 字段) 核销状态 : 0等待提交 1.等待审核 2审核通过 3.无需审核 4.审核驳回 5.释放金额 6释放审批中 7释放审批驳回 8释放撤回 9成交单退款',
+verify_batch_id                                        int             comment '核销批次id ex_flow_verify_batch表id',
+actual_refund_money                                    double          comment '实收的退款金额',
+step_num                                               int             comment '合同预测表的step_num',
+release_verify_status                                  int             comment '银行回款核销发起释放审批时状态 verify_status的值',
+etl_time                                               string          comment 'ETL跑数时间'
+) row format delimited fields terminated by '\001' 
+lines terminated by '\n' 
+stored as textfile  
+location '/dw/ods/ex_payment_detail_history'
+;

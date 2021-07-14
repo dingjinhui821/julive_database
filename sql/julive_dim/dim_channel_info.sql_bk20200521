@@ -1,0 +1,75 @@
+-- 渠道维度表ETL
+
+set etl_date = '${hiveconf:etlDate}';
+-- set etl_date = regexp_replace(date_add(current_date(),-1),'-',''); 
+
+set spark.app.name=dim_channel_info;
+set mapred.job.name=dim_channel_info;
+
+insert overwrite table julive_dim.dim_channel_info 
+
+select 
+
+t1.channel_id as skey,
+t1.channel_id,
+t1.channel_name,
+t1.city_id,
+t2.city_name,
+t2.city_seq,
+t1.channel_type_id as media_id,
+t1.channel_type_name as media_name,
+t1.channel_type as module_id,
+case 
+when t1.channel_type = 1 then "feed"
+when t1.channel_type = 2 then "导航"
+when t1.channel_type = 3 then "APP渠道"
+when t1.channel_type = 4 then "SEM"
+when t1.channel_type = 5 then "免费"
+when t1.channel_type = 6 and instr(channel_name,'老客召回')>0 then "老客召回"
+when t1.channel_type = 7 then "端口"
+when t1.channel_type = 8 then "小程序"
+when t1.channel_type = 9  then "乐居"
+when t1.channel_type = 10 then "厂商"
+when t1.channel_type = 11 then "咨询师"
+when t1.channel_type = 12 then "厂商"
+when t1.channel_type = 13 then "开发商"
+when t1.channel_type = 14 then "开发商-B"
+when t1.channel_type = 15 then "商务投放"
+when t1.channel_type = 17 then "SEO"
+else "其他" end as module_name,
+
+device_type as device_id,
+case 
+when t1.device_type = 1 then "PC"
+when t1.device_type = 2 then "M"
+when t1.device_type = 3 then "APP"
+when t1.device_type = 4 then "其他"
+when t1.device_type = 5 then "PCM"
+when t1.device_type = 6 then "微信小程序"
+when t1.device_type = 7 then "百度小程序"
+when t1.device_type = 8 then "微信公众号"
+else "其他"
+end as device_name,
+
+-- 以下这2个属性，目前为null
+t1.app_type as app_type_id,
+case 
+when t1.app_type = 1 then 'android'
+when t1.app_type = 2 then 'ios'
+else '未知' end as app_type_name,
+
+coalesce(from_unixtime(t1.create_datetime),from_unixtime(t1.update_datetime)) as create_time,
+coalesce(from_unixtime(t1.update_datetime),from_unixtime(t1.create_datetime)) as update_time,
+t1.status,
+t1.group_id,
+t1.utm_source,
+${hiveconf:etl_date} as pdate,
+current_timestamp() as etl_time 
+
+from ods.cj_channel t1 
+-- left join ods.cj_district t2 on t1.city_id = t2.id
+left join julive_dim.dim_city t2 on t1.city_id = t2.city_id 
+;
+
+
+
